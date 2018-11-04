@@ -4,7 +4,7 @@
 
 var name = "";
 var content = "";
-var url = "http://test.hunliji.com/p/wedding/Admin/index/";
+var url = "http://test.xxx.com/index/";
 $(document).on("keyup","textarea.todo-content",function(e){
     var todo_content = $(this);
     var content = todo_content.val();

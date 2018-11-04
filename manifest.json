@@ -22,13 +22,13 @@
 
   "content_scripts":[
     {
-      "matches":["https://tower.im/*","http://test.hunliji.com/*"],
+      "matches":["https://tower.im/*","http://test.xxx.com/*"],
       "js":["js/jquery-2.1.0.min.js",
         "js/main.js"]
     }
   ],
   "permissions": [
-    "https://tower.im/*,http://test.hunliji.com/*",
+    "https://tower.im/*,http://test.xxx.com/*",
     "activeTab",
     "storage"
   ]

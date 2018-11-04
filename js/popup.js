@@ -1,5 +1,5 @@
 var name,guid;
-var url = "http://test.hunliji.com/p/wedding/Admin/index/";
+var url = "http://test.xxx.com/index/";
 function _li(key,count){
     var search = key == "done"?"":key;
     _html = '<li class="todo"> \
