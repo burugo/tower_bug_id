@@ -4,7 +4,7 @@
 "name": "一只八哥",
 "description": "bug ID 生成工具",
   "author": "周瑜",
-"version": "0.1",
+"version": "0.2",
   "browser_action": {
     "default_icon": {
       "19": "images/icon19.png",
@@ -17,19 +17,20 @@
 
     "background": {
       "scripts": ["js/background.js"],
-      "persistent": true
+      "persistent": false
     },
 
   "content_scripts":[
     {
-      "matches":["https://tower.im/*","http://test.xxx.com/*"],
-      "js":["js/jquery-2.1.0.min.js",
-        "js/main.js"]
+      "matches":["https://tower.im/*","https://*.tower.im/*"],
+      "js":["js/jquery.min.js",
+        "js/main.js"],
+      "all_frames":true
     }
   ],
   "permissions": [
-    "https://tower.im/*,http://test.xxx.com/*",
+    "https://www.example.com/*","http://www.example.com/*",
     "activeTab",
-    "storage"
+    "storage","clipboardWrite"
   ]
 }

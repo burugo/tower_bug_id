@@ -45,6 +45,11 @@
             text-align: left;padding: 5px 8px;
 
         }
+        #short_url textarea{
+            border:none;
+            resize:none;
+            position: relative;
+        }
         div button{
             font-size: 14px;
 
@@ -60,7 +65,7 @@
             background-clip: padding-box;
         }
     </style>
-    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/popup.js"></script>
 </head>
 <body>
@@ -71,6 +76,12 @@
             一只八哥在看着你…… ^_^
         </ul>
         <button id="clear">clear</button>
+        <button id="url">短链接</button>
+        <div id="short_url" style="display: none">
+            <textarea  cols="25" rows="1"></textarea><br/>
+        <span>已复制到剪贴板</span><textarea id="sandbox" style="display: none;" ></textarea>
+        </div>
     </div>
+
 </body>
 </html>
