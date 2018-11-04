@@ -1,0 +1,35 @@
+
+{
+"manifest_version": 2,
+"name": "一只八哥",
+"description": "bug ID 生成工具",
+  "author": "周瑜",
+"version": "0.1",
+  "browser_action": {
+    "default_icon": {
+      "19": "images/icon19.png",
+      "38": "images/icon38.png"
+    },
+    "default_title": "一只八哥在看着你",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": true
+    },
+
+  "content_scripts":[
+    {
+      "matches":["https://tower.im/*","http://test.hunliji.com/*"],
+      "js":["js/jquery-2.1.0.min.js",
+        "js/main.js"]
+    }
+  ],
+  "permissions": [
+    "https://tower.im/*,http://test.hunliji.com/*",
+    "activeTab",
+    "storage"
+  ]
+}

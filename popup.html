@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>popup</title>
+    <style>
+        body{
+            font-family: "Helvetica Neue", "Hiragino Sans GB", "冬青黑体", Helvetica, Arial, sans-serif;
+        }
+        a,a:hover,a:active {
+            margin: 0;
+            padding: 0;
+            font-size: 15px;
+            vertical-align: baseline;
+            background: transparent;
+            text-decoration:none;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width:200px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        .todolist .todo {
+            font-size: 15px;
+            padding: 2px 5px 2px 14px;
+            margin: 0 0 0 -10px;
+            position: relative;
+            text-align: center;
+        }
+        .todo span{line-height: 1.6;}
+        .todo label {
+            color: #d45d51;
+            padding-left: 10px;
+        }
+        div{
+            text-align: center;
+        }
+        #nick{
+            text-align: left;padding: 5px 8px;
+
+        }
+        div button{
+            font-size: 14px;
+
+            color: #fff;
+            background-color: #8baf47;
+            display: inline-block;
+            margin: 10px 10px 0 0;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            cursor: pointer;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+        }
+    </style>
+    <script src="js/jquery-2.1.0.min.js"></script>
+    <script src="js/popup.js"></script>
+</head>
+<body>
+
+    <span id="nick"></span>：
+    <div>
+        <ul class="todolist">
+            一只八哥在看着你…… ^_^
+        </ul>
+        <button id="clear">clear</button>
+    </div>
+</body>
+</html>
